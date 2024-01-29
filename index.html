@@ -1,297 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&family=Poppins:wght@400;700&family=Source+Code+Pro:wght@300&family=Source+Sans+Pro:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <title>N.G - Developer Portfolio</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      body {
-        background-color: rgb(0, 0, 33);
-        color: white;
-        font-family: "Poppins", sans-serif;
-      }
-      nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 80px;
-        background-color: rgb(18, 18, 62);
-      }
-      nav ul {
-        display: flex;
-        justify-content: center;
-      }
-      nav ul li {
-        list-style: none;
-        margin: 0 23px;
-      }
-      nav ul li a {
-        text-decoration: none;
-        color: white;
-      }
-      nav ul li a:hover {
-        /* text-decoration: none; */
-        color: rgb(153, 153, 232);
-        font-size: 1.01rem;
-      }
-      main hr {
-        border: 0;
-        background: #9c97f1;
-        height: 1.2px;
-        margin: 60px 84px;
-      }
-      .left {
-        font-size: 1.5rem;
-      }
-      .firstSection {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin: 130px 0;
-      }
-      .firstSection > div {
-        width: 30%;
-      }
-      .leftSection {
-        /* background-color: red; */
-        font-size: 2.5rem;
-        /* margin: 30px 0; */
-      }
-      .leftSection .buttons{
-        padding: 50px 0;
-      }
-      .leftSection .btn{
-        padding: 12px;
-        background: #1e2167;
-        color: white;
-        border: 2px solid white;
-        border-radius: 6px;
-        font-size: 20px;
-        cursor: pointer;
-      }
-      .rightSection img {
-        /* background-color: red; */
-        width: 80%;
-      }
-      .purple {
-        color: rgb(170, 107, 228);
-      }
-      .text-gray {
-        color: rgb(170, 107, 228);
-      }
-      #element {
-        color: rgb(170, 107, 228);
-      }
-      .secondSection {
-        max-width: 80vw;
-        margin: auto;
-        height: 80vh;
-      }
-      .secondSection h1 {
-        font-size: 1.9rem;
-      }
-      .secondSection .box {
-        background: white;
-        width: 77vw;
-        height: 2px;
-        margin: 56px 0;
-        display: flex;
-      }
-      .secondSection .vertical {
-        height: 93px;
-        width: 1px;
-        background-color: white;
-        margin: 0 120px;
-      }
-      .image-top {
-        width: 23px;
-        position: relative;
-        top: -32px;
-        left: -9px;
-      }
-      .vertical-title {
-        position: relative;
-        top: 75px;
-        width: 150px;
-        font-size: 14px;
-      }
-      .vertical-desc {
-        position: relative;
-        top: 86px;
-        color: gray;
-        width: 150px;
-        font-size: 9px;
-      }
-      footer{
-        background-color: #0e0e1a;
-        /* height: 233px; */
-      }
-      .footer{
-        display: flex;
-        padding: 23px 122px;
-        justify-content: space-evenly;
-      }
-      .footer ul{
-        list-style: none;
-      }
-      .footer > div{
-        width: 223px;
-      }
-      footer .footer-rights{
-        text-align: center;
-        color: gray;
-        padding: 12px;
-      }
-    </style>
+    <meta charset="utf-8">
+    <title>Prodigy Task 4</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linking BoxIcon for Icon -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="left">N.G Portfolio</div>
-        <div class="right">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Services</a></li>
-            <li><a href="/">Projects</a></li>
-            <li><a href="/">Contact Me</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section class="firstSection">
-        <div class="leftSection">
-          Hi, My Name is <span class="purple">Nutan</span>
-          <div>and I am a passionate</div>
-          <!-- <div>Web Developer</div> -->
-          <span id="element"></span>
-          <div class="buttons">
-            <button class="btn">Download Resume</button>
-            <button class="btn">Visit GitHub</button>
-          </div>
-        </div>
-        <div class="rightSection">
-          <img src="bg.png" alt="" srcset="" />
+    <div class="wrapper">
+      <header><i class='bx bx-left-arrow-alt'></i>Weather App</header>
+      <section class="input-part">
+        <p class="info-txt"></p>
+        <div class="content">
+          <input type="text" spellcheck="false" placeholder="Enter city name" required>
+          <div class="separator"></div>
+          <button>Get Device Location</button>
         </div>
       </section>
-      <hr />
-      <section class="secondSection">
-        <span class="text-gray">What i have done so far</span>
-        <h1>Work Experience</h1>
-        <div class="box">
-          <div class="vertical">
-            <img class="image-top" src="developer.png" alt="" srcset="" />
-            <div class="vertical-title">HTML Developer(2019-2023)</div>
-            <div class="vertical-desc">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem
-              voluptatibus doloribus repudiandae praesentium eos at nisi quod
-              non quisquam sint. Assumenda qui fugiat quas incidunt quia
-              adipisci libero eum magnam.
+      <section class="weather-part">
+        <img src="" alt="Weather Icon">
+        <div class="temp">
+          <span class="numb">_</span>
+          <span class="deg">°</span>C
+        </div>
+        <div class="weather">_ _</div>
+        <div class="location">
+          <i class='bx bx-map'></i>
+          <span>_, _</span>
+        </div>
+        <div class="bottom-details">
+          <div class="column feels">
+            <i class='bx bxs-thermometer'></i>
+            <div class="details">
+              <div class="temp">
+                <span class="numb-2">_</span>
+                <span class="deg">°</span>C
+              </div>
+              <p>Feels like</p>
             </div>
           </div>
-          <div class="vertical">
-            <img class="image-top" src="developer.png" alt="" srcset="" />
-            <div class="vertical-title">React.js Developer(2023)</div>
-            <div class="vertical-desc">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem
-              voluptatibus doloribus repudiandae praesentium eos at nisi quod
-              non quisquam sint. Assumenda qui fugiat quas incidunt quia
-              adipisci libero eum magnam.
+          <div class="column humidity">
+            <i class='bx bxs-droplet-half'></i>
+            <div class="details">
+              <span>_</span>
+              <p>Humidity</p>
             </div>
-          </div>
-          <div class="vertical">
-            <img class="image-top" src="developer.png" alt="" srcset="" />
-            <div class="vertical-title">Django(2022)</div>
-            <div class="vertical-desc">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem
-              voluptatibus doloribus repudiandae praesentium eos at nisi quod
-              non quisquam sint. Assumenda qui fugiat quas incidunt quia
-              adipisci libero eum magnam.
-            </div>
-          </div>
-          <div class="vertical">
-            <img class="image-top" src="developer.png" alt="" srcset="" />
-            <div class="vertical-title">PHP-Mysql(2020-2022)</div>
-            <div class="vertical-desc">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem
-              voluptatibus doloribus repudiandae praesentium eos at nisi quod
-              non quisquam sint. Assumenda qui fugiat quas incidunt quia
-              adipisci libero eum magnam.
-            </div>
-          </div>
-          <div class="vertical">
-            <img class="image-top" src="developer.png" alt="" srcset="" />
-            <div class="vertical-title">C++(2019)</div>
-            <div class="vertical-desc">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem
-              voluptatibus doloribus repudiandae praesentium eos at nisi quod
-              non quisquam sint. Assumenda qui fugiat quas incidunt quia
-              adipisci libero eum magnam.
-            </div>
-          </div>
-          
           </div>
         </div>
       </section>
-    </main>
-    <footer>
-      <div class="footer">
-        <div class="footer-first">
-          <h3>Nutan Developer Portfolio</h3>
-        </div>
-        <div class="footer-second">
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>contact</li>
-          </ul>
-        </div>
-        <div class="footer-third">
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>contact</li>
-          </ul>
-        </div>
-        <div class="footer-fourth">
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Services</li>
-            <li>contact</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-rights">
-        Copyright &#169; ngkingdom.com | All Rights Reserved
-      </div>
-    </footer>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    </div>
+    
+    <script src="script.js"></script>
 
-    <script>
-      var typed = new Typed("#element", {
-        strings: [
-          "Web Developer",
-          "Web Designer",
-          "Competative Coder",
-          "Video Editor.",
-        ],
-        typeSpeed: 50,
-      });
-    </script>
   </body>
 </html>
